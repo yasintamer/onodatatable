@@ -1,0 +1,22 @@
+import com.android.build.api.dsl.LibraryExtension
+import com.ono.datatable.configureKotlinAndroid
+import org.gradle.api.Plugin
+import org.gradle.api.Project
+import org.gradle.kotlin.dsl.apply
+import org.gradle.kotlin.dsl.configure
+
+class AndroidLibraryConventionPlugin : Plugin<Project> {
+    override fun apply(target: Project) {
+        with(target) {
+            apply(plugin = "com.android.library")
+
+            extensions.configure<LibraryExtension> {
+                configureKotlinAndroid(this)
+                testOptions.targetSdk = 35
+                lint.targetSdk = 35
+                defaultConfig.testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+                testOptions.animationsDisabled = true
+            }
+        }
+    }
+}
