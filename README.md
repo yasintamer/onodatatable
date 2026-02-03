@@ -4,7 +4,7 @@
 built from the ground up. It's designed to handle large datasets with ease, featuring smooth scrolling, 
 fling gestures, and overscroll effects in both horizontal and vertical directions.
 
-![Ono Data Table Demo](<https://github.com/user-attachments/assets/d8796340-9960-4b7a-a369-69cb402c5cc8>)
+![Ono Data Table Demo](<https://github.com/user-attachments/assets/f62f0880-f260-4694-89a5-a8d9aed9f315>)
 
 ## ✨ Features
 
